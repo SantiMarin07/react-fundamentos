@@ -1,12 +1,21 @@
-
 import './App.css'
-import ContenedorClase from './components/ContenedorClase'
-function App() {
+import Contador from './components/Contador'
+import Saludo from './components/Saludo'
+import ListaTareas from './components/ListaTareas'
 
+function App() {
   return (
-    <>
-      <ContenedorClase />
-    </>
+    <main>
+      <header>
+        <h1>Fundamentos de React</h1>
+        <p>Componentes, props, estado, eventos, formularios y listas.</p>
+      </header>
+      <div className="grid">
+        <Contador />
+        <Saludo />
+        <ListaTareas />
+      </div>
+    </main>
   )
 }
 
